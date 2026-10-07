@@ -1,0 +1,53 @@
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f8f5ef;color:#292722;font-family:Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;background:#fffdf9;padding:48px 40px;border:1px solid #d8d0c4}
+.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#716c64;margin-bottom:18px}
+.title{font-family:Georgia,serif;font-size:clamp(34px,6vw,54px);font-weight:400;line-height:1.05;margin:0 0 16px}
+.intro{font-family:Georgia,serif;font-size:17px;line-height:1.65;color:#716c64;max-width:590px;margin-bottom:42px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 22px}
+.full{grid-column:1/-1}
+.field label{display:block;text-transform:uppercase;letter-spacing:.13em;font-size:10px;margin-bottom:9px;color:#716c64}
+input,textarea,select{width:100%;font:16px Georgia,serif;color:#292722;background:transparent;border:0;border-bottom:1px solid #d8d0c4;border-radius:0;padding:10px 2px 12px;outline:none}
+textarea{min-height:125px;resize:vertical;line-height:1.5}
+.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 20px;padding-top:5px}
+.checks label{display:flex;align-items:center;gap:9px;text-transform:none;letter-spacing:0;font-size:14px;color:#292722;cursor:pointer}
+.checks input{width:auto}
+.note{font-size:12px;line-height:1.5;color:#716c64;margin-top:9px}
+.submit{margin-top:38px;width:100%;padding:17px 20px;border:1px solid #292722;background:#292722;color:#fffdf9;font-size:11px;text-transform:uppercase;letter-spacing:.18em;cursor:pointer}
+@media(max-width:600px){.wrap{padding:32px 22px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.checks{grid-template-columns:1fr}.intro{font-size:16px}}
+</style>
+<div class="wrap">
+<div class="kicker">Seraphina Rose Photo</div>
+<h1 class="title">Let's make something beautiful.</h1>
+<p class="intro">Tell me a little about you, your people, and the season of life you're in. I want to hear what you're dreaming up, what feels meaningful to you, and how I can help turn it into photographs you'll love coming back to.</p>
+<form action="https://formsubmit.app/f/jpb69yth69" method="POST">
+<input type="hidden" name="_subject" value="New Photography Inquiry — Seraphina Rose Photo">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://seraphinarosephoto.com/thank-you">
+<div class="grid">
+<div class="field"><label for="sr-name">Tell me your name *</label><input id="sr-name" name="name" required></div>
+<div class="field"><label for="sr-email">Where can I reach you? *</label><input id="sr-email" name="email" type="email" required></div>
+<div class="field"><label for="sr-phone">Phone number</label><input id="sr-phone" name="phone" type="tel"></div>
+<div class="field"><label for="sr-date">When are you hoping to make these photographs?</label><input id="sr-date" name="date" placeholder="e.g. October 2026 / flexible"></div>
+<div class="field full"><label>What kind of story are we photographing?</label><div class="checks">
+<label><input type="checkbox" name="session" value="Family"> Family</label>
+<label><input type="checkbox" name="session" value="Newborn"> Newborn</label>
+<label><input type="checkbox" name="session" value="Maternity"> Maternity</label>
+<label><input type="checkbox" name="session" value="Kids / Milestones"> Kids / Milestones</label>
+<label><input type="checkbox" name="session" value="Couples"> Couples</label>
+<label><input type="checkbox" name="session" value="Wedding / Elopement"> Wedding / Elopement</label>
+<label><input type="checkbox" name="session" value="Other"> Other</label>
+</div></div>
+<div class="field"><label for="sr-location">Where are you located?</label><input id="sr-location" name="location" placeholder="City / area"></div>
+<div class="field"><label for="sr-found">How did you find me?</label><select id="sr-found" name="found"><option value="">Select one</option><option>Instagram</option><option>Google</option><option>Referral / friend</option><option>Another photographer</option><option>Other</option></select></div>
+<div class="field full"><label for="sr-people">Tell me a little about the people I'll be photographing.</label><textarea id="sr-people" name="people" placeholder="Names, ages, relationships, or anything you'd like me to know."></textarea></div>
+<div class="field full"><label for="sr-vision">What are you envisioning? *</label><textarea id="sr-vision" name="vision" required placeholder="Maybe there's a feeling you want to capture, a location you love, a little season of life you want to remember, or simply a desire to have everyone together. Tell me anything that feels important."></textarea></div>
+<div class="field full"><label for="sr-budget">Are you working with a particular package or budget?</label><input id="sr-budget" name="budget" placeholder="Optional"></div>
+<div class="field full"><label for="sr-anything">Is there anything else you'd love me to know?</label><textarea id="sr-anything" name="anything" placeholder="Questions, special details, or anything you want to share."></textarea></div>
+</div>
+<p class="note">By submitting this form, you’re giving me permission to contact you about your photography inquiry.</p>
+<button class="submit" type="submit">Let’s do this →</button>
+</form>
+</div>
